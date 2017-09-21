@@ -1,1 +1,1 @@
-Hello World my first repo
+Hello everybody! This is my second learn project!
