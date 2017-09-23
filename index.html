@@ -1,34 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Test site</title>
+    <title>ShowTracker</title>
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="scripts/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="scripts/modernizr.custom.js"></script>
   </head>
   <body onload="openNav()">
       <header>
         <div id="header"></div>
           <div id="back">
-            <a class="link_1" href="#">Show<span>Tracker</span></a>
-            <a class="link_2" href="#">Сериалы</a>
-            <a class="link_2" href="#">Фильмы</a>
-            <a class="link_2" href="#">ТВ</a>
-            <a class="link_2" href="#">Актёры</a>
-            <a class="link_2" href="#">Персонажи</a>
-            <a class="link_2" href="#">VIP</a>
-            <a class="link_3" href="#">Войти</a>
+            <a class="link_1" href="index.html">Show<span>Tracker</span></a>
+            <a class="link_2" href="pages/serials.html">Сериалы</a>
+            <a class="link_2" href="pages/films.html">Фильмы</a>
+            <a class="link_2" href="pages/TV.html">ТВ</a>
+            <a class="link_2" href="pages/actors.html">Актёры</a>
+            <a class="link_2" href="pages/charakters.html">Персонажи</a>
+            <a class="link_2" href="pages/VIP.html">VIP</a>
+            <a class="link_3" style="height: 41px;" href="pages/login.html">Войти</a>
+
           </div>
       </header>
+      <div id="sb-search" class="sb-search">
+        <form>
+          <input class="sb-search-input" placeholder="Что будем искать?:)" type="text" value="" name="search" id="search">
+          <input class="sb-search-submit" type="submit" value="">
+          <span class="sb-icon-search"></span>
+        </form>
+      </div>
       <div id="myNav" class="backGround">
         <div>
           <h1>Следи за выходом
             <br>новых серий</h1>
             <p>Получай оповещения и рекомендации о новых
               <br>фильмах и сериалах от ShowTracker</p>
-            <a class="link_4" href="#">Смотреть</a>
-          <a class="link_5" href="#">Войти</a>
+            <a class="link_4" style="height: 59px;" href="pages/look.html">Смотреть</a>
+          <a class="link_5" style="height: 58px;" href="pages/login.html">Войти</a>
         </div>
       </div>
+      <script type="text/javascript">
+      function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+      }
+      </script>
+      <script src="scripts/classie.js"></script>
+  		<script src="scripts/uisearch.js"></script>
+  		<script>
+  			new UISearch( document.getElementById( 'sb-search' ) );
+      </script>
   </body>
 </html>
