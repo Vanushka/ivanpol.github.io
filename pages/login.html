@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>ShowTracker</title>
+    <title>login</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="../scripts/script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../scripts/modernizr.custom.js"></script>
   </head>
   <body onload="openNav()">
       <header>
@@ -17,9 +19,16 @@
             <a class="link_2" href="actors.html">Актёры</a>
             <a class="link_2" href="charakters.html">Персонажи</a>
             <a class="link_2" href="VIP.html">VIP</a>
-            <a class="link_3" href="login.html">Войти</a>
+            <a class="link_3" style="height: 41px;" href="login.html">Войти</a>
           </div>
       </header>
+      <div id="sb-search" class="sb-search">
+        <form>
+          <input class="sb-search-input" placeholder="Что будем искать?:)" type="text" value="" name="search" id="search">
+          <input class="sb-search-submit" type="submit" value="">
+          <span class="sb-icon-search"></span>
+        </form>
+      </div>
       <div id="myNav" class="backGround">
 
       </div>
@@ -27,6 +36,11 @@
       function openNav() {
         document.getElementById("myNav").style.width = "100%";
       }
+      </script>
+      <script src="../scripts/classie.js"></script>
+  		<script src="../scripts/uisearch.js"></script>
+  		<script>
+  			new UISearch( document.getElementById( 'sb-search' ) );
       </script>
   </body>
 </html>
